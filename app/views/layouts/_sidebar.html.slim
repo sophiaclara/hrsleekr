@@ -1,0 +1,48 @@
+script crossorigin="anonymous" defer="defer" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+script crossorigin="anonymous" defer="defer" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+
+
+nav#sidebar
+  .sidebar-header 
+    h3= link_to("Sleekr", style: "color: #ababab !important;text-decoration: none;")
+  ul.list-unstyled.components
+    P PRIBADI
+    li.active= link_to("Halaman Depan", style: "text-decoration: none;")
+    li=link_to("Data Diri",  style: "text-decoration: none;")
+    li
+      a.dropdown-toggle aria-expanded="false" data-toggle="collapse" href="#Kalender" style="text-decoration: none;"  Kalender
+      ul#Kalender.collapse.list-unstyled
+        li= link_to("Cuti",  style: "text-decoration: none;")
+        li= link_to("Absensi", style: "text-decoration: none;")
+        li= link_to("Lembur", style: "text-decoration: none;")
+    li
+      a.dropdown-toggle aria-expanded="false" data-toggle="collapse" href="#Keuangan" style="text-decoration: none;" Keuangan
+      ul#Keuangan.collapse.list-unstyled
+        li= link_to("Klaim", style: "text-decoration: none;")
+        li= link_to("Gaji", style: "text-decoration: none;")
+        li= link_to("Cash Advance", style: "text-decoration: none;")
+    li
+      a.dropdown-toggle aria-expanded="false" data-toggle="collapse" href="#Lainnya" style="text-decoration: none;" Lainnya
+      ul#Lainnya.collapse.list-unstyled
+        li= link_to("Berkas", style: "text-decoration: none;")
+        li= link_to("Job Desc", style: "text-decoration: none;")
+        li= link_to("Surat Keterangan", style: "text-decoration: none;")
+        li= link_to("Helpdesk HR", style: "text-decoration: none;")
+        li= link_to("Karir", style: "text-decoration: none;")
+    P PERUSAHAAN
+    li=link_to("Direktori",  style: "text-decoration: none;")
+    li=link_to("Aktivitas",  style: "text-decoration: none;")
+    li=link_to("Profil",  style: "text-decoration: none;")
+    li=link_to("Peraturan",  style: "text-decoration: none;")
+    P UMUM
+    li=link_to("Tugas & Notifikasi",  style: "text-decoration: none;")
+    li=link_to("Kelola Akun",  style: "text-decoration: none;")
+
+javascript:
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+      $(this).toggleClass('active');
+    });
+  });
+

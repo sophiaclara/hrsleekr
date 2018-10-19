@@ -27,6 +27,25 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#style
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass-extras'
+gem 'font-awesome-rails'
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
+gem 'simple_form'
+gem 'cocoon'
+gem 'jquery-datatables-rails'
+gem 'ajax-datatables-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'groupdate'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem 'slim-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'cloudinary'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
